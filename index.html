@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PTE 52 Mock · 全真模考</title>
+<meta name="description" content="PTE Academic 阅读 + 听力全真模考：31 题完整版、自动估分、逐题解析。">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/exam">
+      <span class="brand-mark">PTE</span>
+      <span>52 Mock<small>EXAM ONLY</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#/exam" class="active">模考</a>
+      <a href="#/exam" id="navHistory">记录</a>
+    </nav>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="foot">
+  <div class="container">
+    <span>PTE 52 Mock · 只做阅读 + 听力模考 · 题目按官方题型自编，非真题原文</span>
+    <span>目标 52 ≈ 雅思 6.0 · 澳洲硕士 / 学生签证</span>
+  </div>
+</footer>
+
+<script src="assets/questions.js"></script>
+<script src="assets/mock-questions.js"></script>
+<script src="assets/exam.js"></script>
+<script>
+  document.getElementById("navHistory").addEventListener("click", function (e) {
+    var el = document.getElementById("history");
+    if (el) { e.preventDefault(); el.scrollIntoView({ behavior: "smooth", block: "start" }); }
+  });
+</script>
+</body>
+</html>
